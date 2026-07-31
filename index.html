@@ -1,19 +1,196 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
+
 <head>
 <meta charset="UTF-8">
-<title>Video Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Video Portfolio | 南 健一</title>
+
+<style>
+
+body {
+  margin: 0;
+  background: #f7f7f7;
+  color: #222;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 30px;
+}
+
+header {
+  margin-bottom: 100px;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+p {
+  line-height: 1.8;
+  color: #555;
+}
+
+
+/* 動画一覧 */
+
+.works {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px 40px;
+}
+
+
+.video iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+}
+
+
+.video h2 {
+  margin-top: 20px;
+}
+
+
+/* スマホ対応 */
+
+@media(max-width:700px){
+
+.container {
+  padding: 50px 20px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+.works {
+  grid-template-columns: 1fr;
+}
+
+}
+
+</style>
+
 </head>
+
 
 <body>
 
-<h1>Video Portfolio</h1>
+
+<div class="container">
+
+
+<header>
+
+<h1>
+Video Portfolio
+</h1>
 
 <p>
-企業向け動画制作
+企業向け動画制作<br>
+南 健一
 </p>
 
-<h2>展示会動画</h2>
+</header>
+
+
+
+<section class="works">
+
+
+<div class="video">
+
+<iframe 
+src="https://www.youtube.com/embed/動画ID"
+allowfullscreen>
+</iframe>
+
+<h2>
+展示会動画
+</h2>
+
+<p>
+展示会ブース向けの商品紹介動画。
+</p>
+
+</div>
+
+
+
+<div class="video">
+
+<iframe 
+src="https://www.youtube.com/embed/動画ID"
+allowfullscreen>
+</iframe>
+
+<h2>
+サービス紹介動画
+</h2>
+
+<p>
+企業サービスの魅力を伝える紹介動画。
+</p>
+
+</div>
+
+
+
+<div class="video">
+
+<iframe 
+src="https://www.youtube.com/embed/動画ID"
+allowfullscreen>
+</iframe>
+
+<h2>
+採用動画
+</h2>
+
+<p>
+企業の魅力を伝える採用向け動画。
+</p>
+
+</div>
+
+
+
+<div class="video">
+
+<iframe 
+src="https://www.youtube.com/embed/動画ID"
+allowfullscreen>
+</iframe>
+
+<h2>
+会社紹介動画
+</h2>
+
+<p>
+会社や事業を紹介する動画。
+</p>
+
+</div>
+
+
+</section>
+
+
+</div>
+
 
 </body>
+
 </html>
