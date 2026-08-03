@@ -110,6 +110,41 @@ h1 {
 
 }
 
+/* WORKS見出し */
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.section-title p {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.3em;
+  color: #888;
+  margin: 0;
+}
+
+.section-title::after {
+  content: "";
+  height: 1px;
+  background: #e5e5e5;
+  flex: 1;
+}
+
+
+/* 動画カードカテゴリ */
+
+.category {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  color: #888;
+  margin: 20px 25px 0;
+}
+
 </style>
 
 </head>
@@ -138,7 +173,9 @@ VIDEO CREATOR
 
 </header>
 
-
+<div class="section-title">
+  <p>WORKS</p>
+</div>
 
 <section class="works">
 
