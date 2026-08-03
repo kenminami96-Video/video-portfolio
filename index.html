@@ -48,12 +48,21 @@ header {
   padding: 50px 0 70px;
 }
 
-.eyebrow {
-  font-family: "Noto Sans JP", sans-serif;
+.name-label {
+  font-family: "Space Grotesk", sans-serif;
   font-size: 12px;
-  letter-spacing: 0.3em;
-  color: #888;
-  margin: 0 0 12px;
+  letter-spacing: 0.25em;
+  color: #777777;
+  margin: 0 0 14px;
+}
+
+.name-label::before {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 3px;
+  background: #E85D3F;
+  margin-bottom: 16px;
 }
   
 h1 {
@@ -212,7 +221,7 @@ h1 {
 
 <header>
   
-<p class="eyebrow">
+<p class="name-label">
 KENICHI MINAMI
 </p>
 
