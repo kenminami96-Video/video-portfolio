@@ -116,6 +116,8 @@ p {
 ===================== */
 
 .video {
+  position: relative;
+
   background: rgba(255,255,255,0.82);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -127,6 +129,16 @@ p {
 
   box-shadow:
     0 12px 32px rgba(0,0,0,0.06);
+}
+
+.video::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 25px;
+  width: 40px;
+  height: 3px;
+  background: #E85D3F;
 }
 
 .video iframe {
