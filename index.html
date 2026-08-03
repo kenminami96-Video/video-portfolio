@@ -116,8 +116,6 @@ p {
 ===================== */
 
 .video {
-  position: relative;
-
   background: rgba(255,255,255,0.82);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -131,16 +129,6 @@ p {
     0 12px 32px rgba(0,0,0,0.06);
 }
 
-.video::before {
-  content: "";
-  position: absolute;
-  top: calc(56.25% + 10px);
-  left: 25px;
-  width: 40px;
-  height: 3px;
-  background: #E85D3F;
-}
-
 .video iframe {
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -151,6 +139,13 @@ p {
 /* =====================
    カード内テキスト
 ===================== */
+
+.card-line {
+  width: 40px;
+  height: 3px;
+  background: #E85D3F;
+  margin: 20px 25px 15px;
+}
 
 .video h2 {
   margin: 20px 25px 10px;
@@ -277,6 +272,8 @@ src="https://www.youtube.com/embed/uG7W3D-j6w8"
 allowfullscreen>
 </iframe>
 
+<div class="card-line"></div>
+
 <h2>
 展示会動画
 </h2>
@@ -295,6 +292,8 @@ allowfullscreen>
 src="https://www.youtube.com/embed/Da6OSw7URB0"
 allowfullscreen>
 </iframe>
+
+<div class="card-line"></div>
 
 <h2>
 サービス紹介動画
@@ -315,6 +314,8 @@ src="https://www.youtube.com/embed/UPyBy_UUngc"
 allowfullscreen>
 </iframe>
 
+<div class="card-line"></div>
+
 <h2>
 採用動画
 </h2>
@@ -333,6 +334,8 @@ allowfullscreen>
 src="https://www.youtube.com/embed/alnDLDWcT7s"
 allowfullscreen>
 </iframe>
+
+<div class="card-line"></div>
 
 <h2>
 会社紹介動画
