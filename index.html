@@ -11,6 +11,10 @@
 <title>Video Portfolio | 南 健一</title>
 
 <style>
+  
+/* =====================
+   基本設定
+===================== */
 
 body {
   margin: 0;
@@ -26,16 +30,32 @@ body {
   font-family: "Noto Sans JP", sans-serif;
 }
 
+/* =====================
+   レイアウト
+===================== */
+  
 .container {
   max-width: 1100px;
   margin: 0 auto;
   padding: 80px 30px;
 }
 
+/* =====================
+   ヘッダー
+===================== */
+
 header {
   padding: 50px 0 70px;
 }
 
+.eyebrow {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.3em;
+  color: #888;
+  margin: 0 0 12px;
+}
+  
 h1 {
   font-size: 44px;
   font-weight: 500;
@@ -70,7 +90,9 @@ p {
   margin: 0;
 }
   
-/* 動画一覧 */
+/* =====================
+   WORKS
+===================== */
 
 .works {
   display: grid;
@@ -78,6 +100,9 @@ p {
   gap: 60px 40px;
 }
 
+/* =====================
+   動画カード
+===================== */
 
 .video {
   background: rgba(255,255,255,0.82);
@@ -100,6 +125,9 @@ p {
   border-radius: 12px 12px 0 0;
 }
 
+/* =====================
+   カード内テキスト
+===================== */
 
 .video h2 {
   margin: 20px 25px 10px;
@@ -109,8 +137,9 @@ p {
   margin: 0 25px 25px;
 }
 
-
-/* スマホ対応 */
+/* =====================
+   スマホ対応
+===================== */
 
 @media(max-width:700px){
 
@@ -128,7 +157,9 @@ h1 {
 
 }
 
-/* WORKS見出し */
+/* =====================
+   セクションタイトル
+===================== */
 
 .section-title {
   display: flex;
@@ -153,8 +184,9 @@ h1 {
   flex: 1;
 }
 
-
-/* 動画カードカテゴリ */
+/* =====================
+   動画カードカテゴリ
+===================== */
 
 .category {
   font-family: "Space Grotesk", sans-serif;
@@ -174,9 +206,15 @@ h1 {
 
 <div class="container">
 
+<!-- =====================
+     ヘッダー
+===================== -->
 
 <header>
-
+  
+<p class="eyebrow">
+KENICHI MINAMI
+</p>
 
 <h1>
 南 健一
@@ -194,9 +232,17 @@ h1 {
 
 </header>
 
+<!-- =====================
+     WORKSタイトル
+===================== -->
+
 <div class="section-title">
   <p>WORKS</p>
 </div>
+
+<!-- =====================
+     動画一覧
+===================== -->
 
 <section class="works">
 
