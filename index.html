@@ -27,6 +27,8 @@ body {
 
 header {
   padding: 50px 0 70px;
+  border-left: 2px solid #dddddd;
+  padding-left: 30px;
 }
 
 h1 {
@@ -64,11 +66,21 @@ p {
 }
 
 .eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-family: "Space Grotesk", sans-serif;
   font-size: 13px;
   letter-spacing: 0.25em;
-  color: #E85D3F;
+  color: #888888;
   margin: 0;
+}
+
+.eyebrow span {
+  width: 6px;
+  height: 6px;
+  background: #E85D3F;
+  border-radius: 50%;
 }
   
 /* 動画一覧 */
@@ -82,15 +94,16 @@ p {
 
 .video {
   background: #ffffff;
-  border-radius: 16px;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+  border: 1px solid #eeeeee;
 }
 
 .video iframe {
   width: 100%;
   aspect-ratio: 16 / 9;
   border: none;
+  border-radius: 12px 12px 0 0;
 }
 
 
@@ -171,6 +184,7 @@ h1 {
 <header>
 
 <p class="eyebrow">
+<span></span>
 VIDEO CREATOR
 </p>
 
