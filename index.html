@@ -45,9 +45,26 @@ body {
 ===================== */
 
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 80px;
   padding: 50px 0 70px;
 }
 
+.hero-left {
+  flex: 1;
+}
+
+.hero-right {
+  flex: 1;
+  min-height: 280px;
+  
+  background: rgba(232,93,63,.05);
+  border-radius: 20px;
+}
+  
 .name-label {
   font-family: "Space Grotesk", sans-serif;
   font-size: 12px;
@@ -235,23 +252,31 @@ h1 {
 ===================== -->
 
 <header>
-  
-<p class="name-label">
-KENICHI MINAMI
-</p>
 
-<h1>
-南 健一
-</h1>
+<div class="hero-left">
 
-<p class="role">
-企画構成から編集まで
-</p>
-
-<div class="lead">
-  <p class="lead-main">
-    サービスや企業の魅力を、分かりやすく伝える動画を制作します
+  <p class="name-label">
+    KENICHI MINAMI
   </p>
+
+  <h1>
+    南 健一
+  </h1>
+
+  <p class="role">
+    企画構成から編集まで
+  </p>
+
+  <div class="lead">
+    <p class="lead-main">
+      サービスや企業の魅力を、分かりやすく伝える動画を制作します
+    </p>
+  </div>
+
+</div>
+
+<div class="hero-right">
+
 </div>
 
 </header>
