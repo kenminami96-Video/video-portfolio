@@ -60,11 +60,66 @@ header {
 .hero-right {
   flex: 1;
   min-height: 280px;
-  
-  background: rgba(232,93,63,.05);
-  border-radius: 20px;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-  
+
+.stat {
+  text-align: center;
+  color: #555;
+}
+
+.stat span {
+  display: block;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 52px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.stat small {
+  display: block;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.35em;
+  color: #999;
+}
+
+.hero-right::before {
+  content: "";
+  position: absolute;
+
+  width: 260px;
+  height: 260px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(232,93,63,0.12),
+      transparent 70%
+    );
+
+  z-index: -1;
+}
+
+.hero-right::after {
+  content:"";
+  position:absolute;
+
+  width:180px;
+  height:180px;
+
+  border:1px solid rgba(232,93,63,.25);
+  border-radius:50%;
+
+  transform: translate(40px,-30px);
+}
+
 .name-label {
   font-family: "Space Grotesk", sans-serif;
   font-size: 12px;
@@ -277,6 +332,11 @@ h1 {
 
 <div class="hero-right">
 
+  <div class="stat">
+    <span>200+</span>
+    <small>VIDEOS</small>
+  </div>
+  
 </div>
 
 </header>
